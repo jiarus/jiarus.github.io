@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="theme-color" content="#165DFF"><meta name="description" content="Java Backend &amp; Ad Tech Notes by Jiaru"><meta name="viewport" content="width"><title>AWS DVA-C02 Study Guide - Jiaru&#039;s Tech Notes</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Jiaru&#039;s Tech Notes"><meta name="msapplication-TileImage" content="/images/avatar.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Jiaru&#039;s Tech Notes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="192x192" href="/images/avatar.png"><meta name="description" content="A practical 4-week plan and key topics for AWS Certified Developer - Associate (DVA-C02)"><meta property="og:type" content="blog"><meta property="og:title" content="AWS DVA-C02 Study Guide"><meta property="og:url" content="https://jiarus.github.io/2026/03/01/Cloud-2026-03-01-aws-dva-c02-prep/"><meta property="og:site_name" content="Jiaru&#039;s Tech Notes"><meta property="og:description" content="A practical 4-week plan and key topics for AWS Certified Developer - Associate (DVA-C02)"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://jiarus.github.io/img/og_image.png"><meta property="article:published_time" content="2026-03-01T05:00:00.000Z"><meta property="article:modified_time" content="2026-03-01T15:09:00.298Z"><meta property="article:author" content="Jiaru"><meta property="article:tag" content="AWS"><meta property="article:tag" content="Certification"><meta property="article:tag" content="DVA-C02"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:image:src" content="https://jiarus.github.io/img/og_image.png"><meta property="twitter:site" content="@JiaruDev"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jiarus.github.io/2026/03/01/Cloud-2026-03-01-aws-dva-c02-prep/"},"headline":"AWS DVA-C02 Study Guide","image":["https://jiarus.github.io/img/og_image.png"],"datePublished":"2026-03-01T05:00:00.000Z","dateModified":"2026-03-01T15:09:00.298Z","author":{"@type":"Person","name":"Jiaru"},"publisher":{"@type":"Organization","name":"Jiaru's Tech Notes","logo":{"@type":"ImageObject"}},"description":"A practical 4-week plan and key topics for AWS Certified Developer - Associate (DVA-C02)"}</script><link rel="canonical" href="https://jiarus.github.io/2026/03/01/Cloud-2026-03-01-aws-dva-c02-prep/"><link rel="alternate" href="/atom.xml" title="Jiaru&#039;s Tech Notes" type="application/atom+xml"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="bootcdn"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="bootcdn"><link rel="stylesheet" href="bootcdn"><link rel="stylesheet" href="bootcdn"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="bootcdn"></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Jiaru&#039;s Tech Notes</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="GitHub" href="https://github.com/jiarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="post-container"><div style="margin:1rem 0;textAlign:right;"><a href="2026/03/01/Cloud-2026-03-01-aws-dva-c02-prep/" style="padding:0.5rem 1rem;backgroundColor:#42b983;color:white;borderRadius:4px;textDecoration:none;">🌐 中文版本</a></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2026-03-01T05:00:00.000Z" title="2026/3/1 13:00:00">2026-03-01</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-03-01T15:09:00.298Z" title="2026/3/1 23:09:00">2026-03-01</time></span><span class="level-item"><a class="link-muted" href="/categories/Cloud/">Cloud</a></span><span class="level-item">2 minutes read (About 273 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">AWS DVA-C02 Study Guide</h1><div class="content"><blockquote>
+<p>Goal: follow an actionable plan to pass AWS Certified Developer - Associate (DVA-C02).</p>
+</blockquote>
+<h2 id="Exam-Overview"><a href="#Exam-Overview" class="headerlink" title="Exam Overview"></a>Exam Overview</h2><ul>
+<li>Duration: 130 minutes</li>
+<li>Question types: multiple choice &#x2F; multiple response</li>
+<li>Focus areas: development, deployment, monitoring, identity and access, best practices</li>
+</ul>
+<h2 id="Domain-Map"><a href="#Domain-Map" class="headerlink" title="Domain Map"></a>Domain Map</h2><ol>
+<li><strong>Deployment</strong><ul>
+<li>CodeDeploy &#x2F; CodePipeline &#x2F; CodeBuild</li>
+<li>Blue&#x2F;Green and rolling deployments</li>
+</ul>
+</li>
+<li><strong>Security</strong><ul>
+<li>IAM policy boundaries, STS, role assumption</li>
+<li>KMS, Secrets Manager, Parameter Store</li>
+</ul>
+</li>
+<li><strong>Development with AWS Services</strong><ul>
+<li>Lambda &#x2F; API Gateway &#x2F; DynamoDB &#x2F; SQS &#x2F; SNS</li>
+<li>SDK retries, signing, pagination</li>
+</ul>
+</li>
+<li><strong>Troubleshooting and Optimization</strong><ul>
+<li>CloudWatch &#x2F; X-Ray</li>
+<li>Latency and error investigation patterns</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-Week-Plan"><a href="#4-Week-Plan" class="headerlink" title="4-Week Plan"></a>4-Week Plan</h2><h3 id="Week-1-Core-Services-Security"><a href="#Week-1-Core-Services-Security" class="headerlink" title="Week 1: Core Services + Security"></a>Week 1: Core Services + Security</h3><ul>
+<li>IAM, STS, KMS</li>
+<li>Lambda, API Gateway, DynamoDB</li>
+<li>20 practice questions per day, log mistakes</li>
+</ul>
+<h3 id="Week-2-CI-CD-and-Deployment"><a href="#Week-2-CI-CD-and-Deployment" class="headerlink" title="Week 2: CI&#x2F;CD and Deployment"></a>Week 2: CI&#x2F;CD and Deployment</h3><ul>
+<li>CodePipeline, CodeBuild, CodeDeploy</li>
+<li>Elastic Beanstalk</li>
+<li>Understand deployment strategies and rollback</li>
+</ul>
+<h3 id="Week-3-Messaging-and-Event-Driven"><a href="#Week-3-Messaging-and-Event-Driven" class="headerlink" title="Week 3: Messaging and Event-Driven"></a>Week 3: Messaging and Event-Driven</h3><ul>
+<li>SQS, SNS, EventBridge</li>
+<li>Step Functions</li>
+<li>Lambda triggers and retry behavior</li>
+</ul>
+<h3 id="Week-4-Full-Reviews"><a href="#Week-4-Full-Reviews" class="headerlink" title="Week 4: Full Reviews"></a>Week 4: Full Reviews</h3><ul>
+<li>2-3 mock exams</li>
+<li>Review weak areas and mistakes</li>
+</ul>
+<h2 id="High-Frequency-Topics"><a href="#High-Frequency-Topics" class="headerlink" title="High-Frequency Topics"></a>High-Frequency Topics</h2><ul>
+<li>DynamoDB keys, RCU&#x2F;WCU, GSI&#x2F;LSI</li>
+<li>Lambda triggers, concurrency, cold starts</li>
+<li>API Gateway auth (IAM&#x2F;Cognito&#x2F;custom)</li>
+<li>SQS FIFO vs Standard</li>
+<li>KMS vs Secrets Manager vs Parameter Store</li>
+<li>CloudWatch Metrics&#x2F;Logs&#x2F;Alarms</li>
+<li>X-Ray traces and service map</li>
+</ul>
+<h2 id="Study-Resources"><a href="#Study-Resources" class="headerlink" title="Study Resources"></a>Study Resources</h2><ul>
+<li>Official exam guide and sample questions</li>
+<li>Hands-on labs: 30-60 minutes daily</li>
+<li>Use question banks to find gaps, not just to grind</li>
+</ul>
+<h2 id="Practical-Tips"><a href="#Practical-Tips" class="headerlink" title="Practical Tips"></a>Practical Tips</h2><ul>
+<li>Turn common errors and retry rules into flash cards</li>
+<li>For each wrong answer, note the correct service or config</li>
+<li>Build one small serverless project (API Gateway + Lambda + DynamoDB)</li>
+</ul>
+<h2 id="Final-48-Hours"><a href="#Final-48-Hours" class="headerlink" title="Final 48 Hours"></a>Final 48 Hours</h2><ul>
+<li>Stop new questions; review your error log</li>
+<li>Revisit IAM, DynamoDB, Lambda, API Gateway</li>
+<li>Sleep well and simulate exam timing</li>
+</ul>
+<h2 id="Wrap-up"><a href="#Wrap-up" class="headerlink" title="Wrap-up"></a>Wrap-up</h2><p>DVA-C02 rewards practical understanding over memorization. Stick to the plan, and you will be fine.</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>AWS DVA-C02 Study Guide</p><p><a href="https://jiarus.github.io/2026/03/01/Cloud-2026-03-01-aws-dva-c02-prep/">https://jiarus.github.io/2026/03/01/Cloud-2026-03-01-aws-dva-c02-prep/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Jiaru</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2026-03-01</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2026-03-01</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/AWS/">AWS</a><a class="link-muted mr-2" rel="tag" href="/tags/Certification/">Certification</a><a class="link-muted mr-2" rel="tag" href="/tags/DVA-C02/">DVA-C02</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2026/03/01/IELTS-2026-03-01-ielts-study-log/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">IELTS Study Log | Day 1</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2026/03/01/Life-2026-03-01-study-plan/"><span class="level-item">Weekly Study Plan Template</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card" id="comments"><div class="card-content"><h3 class="title is-5">Comments</h3></div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/images/avatar.png" alt="Jiaru"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Jiaru</p><p class="is-size-6 is-block">Java Backend &amp; Ad Tech Developer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Global</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">15</p></a></div></div></nav><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/jiarus"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="LinkedIn" href="https://linkedin.com/in/jiarus"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Cloud/"><span class="level-start"><span class="level-item">Cloud</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Hexo/"><span class="level-start"><span class="level-item">Hexo</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/IELTS/"><span class="level-start"><span class="level-item">IELTS</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/LeetCode/"><span class="level-start"><span class="level-item">LeetCode</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Life/"><span class="level-start"><span class="level-item">Life</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Tools/"><span class="level-start"><span class="level-item">Tools</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-01T06:00:00.000Z">2026-03-01</time></p><p class="title"><a href="/2026/03/01/IELTS-2026-03-01-ielts-study-log/">IELTS Study Log | Day 1</a></p><p class="categories"><a href="/categories/IELTS/">IELTS</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-01T05:00:00.000Z">2026-03-01</time></p><p class="title"><a href="/2026/03/01/Cloud-2026-03-01-aws-dva-c02-prep/">AWS DVA-C02 Study Guide</a></p><p class="categories"><a href="/categories/Cloud/">Cloud</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-01T03:00:00.000Z">2026-03-01</time></p><p class="title"><a href="/2026/03/01/Life-2026-03-01-study-plan/">Weekly Study Plan Template</a></p><p class="categories"><a href="/categories/Life/">Life</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-01T02:00:00.000Z">2026-03-01</time></p><p class="title"><a href="/2026/03/01/Tools-2026-03-01-git-notes/">Git Quick Notes</a></p><p class="categories"><a href="/categories/Tools/">Tools</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-03-01T01:00:00.000Z">2026-03-01</time></p><p class="title"><a href="/2026/03/01/Hexo-2026-03-01-hexo-quick-start/">Hexo Quick Start</a></p><p class="categories"><a href="/categories/Hexo/">Hexo</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/AWS/"><span class="tag">AWS</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Certification/"><span class="tag">Certification</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/DVA-C02/"><span class="tag">DVA-C02</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/IELTS/"><span class="tag">IELTS</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Study-Log/"><span class="tag">Study Log</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/LeetCode/"><span class="tag">LeetCode</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AE%97%E6%B3%95/"><span class="tag">算法</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%9D%A2%E8%AF%95/"><span class="tag">面试</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Hot100/"><span class="tag">Hot100</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Blog/"><span class="tag">Blog</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Planning/"><span class="tag">Planning</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Study/"><span class="tag">Study</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Git/"><span class="tag">Git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Tools/"><span class="tag">Tools</span><span class="tag">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Jiaru&#039;s Tech Notes</a><p class="is-size-7"><span>&copy; 2026 Jiaru</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/jiarus"><i class="fab fa-github"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="LinkedIn" href="https://linkedin.com/in/jiarus"><i class="fab fa-linkedin"></i></a></p></div></div></div></div></footer><script src="bootcdn"></script><script src="bootcdn"></script><script src="bootcdn" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><script src="bootcdn" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="bootcdn" defer></script><script src="bootcdn" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><script src="bootcdn"></script><script src="/js/pjax.js"></script><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
