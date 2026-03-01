@@ -11678,6 +11678,14 @@ figure.highlight.foldable div.level-left {
     padding: 1.5rem 1rem;
   }
 }
+.widget[data-type='profile'] .image {
+  width: 80px;
+  height: 80px;
+}
+.widget[data-type='profile'] .avatar {
+  width: 80px;
+  height: 80px;
+}
 body {
   counter-reset: card;
 }
