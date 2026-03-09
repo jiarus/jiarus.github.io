@@ -6,3 +6,25 @@
   width: 80px;
   height: 80px;
 }
+.article .content pre,
+.article .content figure.highlight pre,
+.article .content figure.highlight .code pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.article .content figure.highlight .gutter pre {
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+@media screen and (min-width: 1216px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1408px) {
+  .container {
+    max-width: 1320px;
+  }
+}
